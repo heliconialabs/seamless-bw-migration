@@ -1,0 +1,103 @@
+:plantuml-server-url: https://www.plantuml.com/plantuml
+:source-highlighter: highlightjs
+
+= Seamless migration of SAP BW to Snowflake
+Lars Hvam, Heliconia Labs, July 2025
+:numbered:
+
+[cols="1,3",frame=none,grid=none]
+|===
+|Home
+|link:https://github.com/heliconialabs/seamless-bw-migration[https://github.com/heliconialabs/seamless-bw-migration]
+
+|License
+|(C) Heliconia Labs, 2025
+
+|Build
+|{docdatetime}
+|===
+
+== Introduction
+
+Migrating from SAP BW to Snowflake can be a complex process, but with the right approach, it can be seamless
+and efficient. The approach uses automated tooling taking your artifacts from SAP BW and converting them to Snowflake without the need for as-is analysis and re-architecting.
+
+== Migration approach
+
+The migration will take the existing artifacts from SAP BW and move the models and designs as is to Snowflake automatically.
+This ensures business continuity and minimizes the risk of data errors or corruption during the migration process.
+Business users can continue leveraging their existing reports and dashboards without redesign of the underlying data models.
+
+
+After the migration, all data resides in Snowflake, and can be used for in new innovations using features in the Snowflake platform, such as data sharing, machine learning, and advanced analytics.
+Re-designing can be done ad-hoc, as the business needs change, already having realized savings on infrastructure costs and licenses.
+
+
+image::img/process.drawio.svg[align="center"]
+
+Overall the migration process consists of the following steps:
+
+1. Export customer artifacts from SAP BW
+2. Automatically migrate the artifacts to Snowflake
+3. Import the artifacts to Snowflake
+4. Ensure data integrity and consistency with shadow runs
+
+
+The ABAP transformations will run on link:https://www.snowflake.com/en/product/features/snowpark/[Snowpark], and along with custom implementations of SAP APIs, will ensure that all business logic is preserved.
+
+
+image::img/technical.drawio.svg[align="center"]
+
+The data model and population will remain the same, datastores and infocubes will be migrated to Snowflake, and the data will be stored in Snowflake.
+
+
+== Data ingestion and reporting
+
+The load of data and reporting can be done with customer tool of choice, or existing BEx queries can be migrated to Snowflake.
+
+image::img/architecture.drawio.svg[align="center"]
+
+
+== Proof of concept
+Contact us for a proof of concept to show how the migration process works. The proof of concept includes:
+
+* Migration of a small set of artifacts from SAP BW to Snowflake
+* Demonstration of the automated tooling and processes used in the migration
+* Evaluation of the performance and efficiency of the migrated artifacts in Snowflake
+
+Requirements:
+
+* Access to BW system
+* Access to Snowflake account
+* Access to Git platform
+
+Note that Integrated Planning features are not not supported.
+
+<<<
+
+== Benefits
+
+Seamless migration from SAP BW to Snowflake offers several benefits, including:
+
+* Fast realization
+* Horizontal scaling
+* Significant lower TCO
+* Low risk
+* Consumption based pricing model
+* Low downtime/dual maintenance
+* No vendor lock-in
+* Open standards and platform with link:https://www.codbex.com/products/kronos[Codbex Kronos]
+
+Also see the link:https://www.snowflake.com/resource/migrating-from-sap-to-snowflake/[Simplifying Your Analytics Landscape by Migrating from SAP to Snowflake] whitepaper from Snowflake.
+
+*About Codbex*
+
+link:https://codbex.com[Codbex] is an innovative and dynamic technology company that specializes in providing software solutions to businesses in a variety of industries.
+We at codbex put our customers' satisfaction first - our aspiration is to be a trusted partner for companies that want to use the full potential of
+their assets and drive sustainable success in an increasingly competitive digital environment.
+
+*About Heliconia Labs*
+
+link:https://heliconialabs.com[Heliconia Labs] is a Danish company that focuses on handling difficult problems within the ABAP Ecosystem.
+With over 20 years of experience in the field, we have a deep understanding of the challenges and complexities involved in working with SAP systems.
+We are committed to building a better future for the ABAP Ecosystem by providing innovative solutions and services that help our clients achieve their goals.
