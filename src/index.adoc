@@ -66,6 +66,7 @@ Contact us for a proof of concept to show how the migration process works. The p
 * Evaluation of the performance and efficiency of the migrated artifacts in Snowflake
 
 Requirements:
+
 * Access to BW system
 * Access to Snowflake account
 * Access to Git platform
