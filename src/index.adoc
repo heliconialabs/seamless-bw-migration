@@ -1,7 +1,7 @@
 :plantuml-server-url: https://www.plantuml.com/plantuml
 :source-highlighter: highlightjs
 
-= abapGit Flow
+= Seamless migration of SAP BW to Snowflake
 Lars Hvam, Heliconia Labs, July 2025
 :numbered:
 
@@ -20,7 +20,7 @@ Lars Hvam, Heliconia Labs, July 2025
 == Introduction
 
 Migrating from SAP BW to Snowflake can be a complex process, but with the right approach, it can be seamless
-and efficient. The approach uses automated tooling taking your artifacts from SAP BW and converting them to Snowflake without the need for as-is analysis and re-architecting .
+and efficient. The approach uses automated tooling taking your artifacts from SAP BW and converting them to Snowflake without the need for as-is analysis and re-architecting.
 
 == Migration approach
 
@@ -71,6 +71,8 @@ Requirements:
 * Access to Git platform
 
 Note that Integrated Planning features are not not supported.
+
+<<<
 
 == Benefits
 
