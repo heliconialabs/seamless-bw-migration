@@ -71,7 +71,11 @@ Requirements:
 * Access to Snowflake account
 * Access to Git platform
 
-Note that Integrated Planning features are not not supported.
+Restrictions:
+
+* Integrated Planning features
+* Open Hub
+* Custom GUI transactions
 
 <<<
 
