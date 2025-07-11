@@ -71,7 +71,7 @@ Requirements:
 * Access to Snowflake account
 * Access to Git platform
 
-Restrictions:
+Limitations:
 
 * Integrated Planning features
 * Open Hub
